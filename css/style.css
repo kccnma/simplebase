@@ -36,6 +36,9 @@ CSS TABLE OF CONTENTS
     --font-body: Helvetica, Arial, sans-serif;
     --font-headings: Georgia, sans-serif;
 
+    /* MEASUREMENT UNITS */
+    --gridgap: 2em;
+
 }
 
 /* GLOBAL RESETS */
@@ -95,12 +98,35 @@ body {
 
 /* GRID SYSTEM */
 .row {
-    background: yellow;
+    display: flex;
+    gap: var(--gridgap);
 }
 
 .column {
-    background: pink;
+    flex-grow: 1;
 }
+
+.one-half { width: 50%; }
+.one-third { width: 33.3333%; }
+.one-fourth { width: 25%; }
+
+
+/* FOR DEMO GRID ONLY */
+.demo .row {
+    margin-bottom: var(--gridgap);
+}
+.demo .column {
+    background: rgb(0 0 0 / .1);
+    padding: 1em;
+    text-align: center;
+}
+
+.demo p {
+    margin: 0;
+    max-width: none;
+}
+
+
 
 
 /* ----------------------------- */
