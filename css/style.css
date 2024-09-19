@@ -108,6 +108,7 @@ h3 {
 p {
     max-width: 60ch;
     margin: .5em 0;
+    text-wrap: pretty;
 }
 
 /* ----------------------------- */
@@ -232,7 +233,7 @@ img {
     align-items: center;
     gap: var(--unit-sm);
 }
-.site-header img, svg {
+.site-header img, .site-header svg {
     display: block;
 }
 .site-header h1 {
@@ -331,6 +332,14 @@ strike {
     margin: 0;
 }
 
+/* SECTION HEADS */
+
+.section-head {
+    padding-bottom: calc(var(--unit-sm) / 2);
+    border-bottom: 3px solid var(--color-accent-color);
+    margin-bottom: var(--unit-md);
+}
+
 /* CUSTOM TYPE BLOCK: HEADLINE AND SUB HEADLINE */
 .headline {
     font-size: 4em;
@@ -351,6 +360,9 @@ strike {
 
     .hero {
         text-align: center;
+        h1 {
+            font-size: 3em;
+        }
         p {
             margin-inline: auto;
         }
@@ -390,6 +402,15 @@ strike {
         list-style: disc;
         margin-bottom: 0;
         font-weight: 400;
+    }
+
+    .maincontent {
+        padding: var(--unit-md) 0;
+    }
+
+    section {
+        padding-top: var(--unit-lg);
+        padding-bottom: var(--unit-md);
     }
 
 }
