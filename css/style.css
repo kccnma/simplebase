@@ -37,17 +37,17 @@ CSS TABLE OF CONTENTS
     --color-body-background: rgb(255 255 255 / 1);
     --color-body-text: rgb(0 0 0 / .8);
     --color-headings: rgb(0 0 0 / 1);
-    --color-links: rgb(51 102 204 / 1);
-    --color-links-dark: rgb(0 51 153 / 1);
-    --color-accent-color: rgb(255, 0, 212);
-    --color-header-bg: rgb(0, 0, 102);
+    --color-links: rgb(0 0 0 / .8);
+    --color-links-dark: rgb(0 0 0 / 1);
+    --color-accent-color: rgb(170, 170, 170);
+    --color-header-bg: rgb(0, 0, 0);
     --color-header-links: rgb(255, 255, 255);
-    --color-hero-bg: rgb(0, 0, 102);
+    --color-hero-bg: rgb(0 0 0 / 1);
     --color-hero-headings: rgb(255 255 255);
     --color-hero-text: rgb(255 255 255 / .8);
     --color-footer-bg: rgba(0, 0, 0, 1);
-    --color-footer-text: rgb(255, 255, 255);
-    --color-footer-links: rgb(204, 204, 255);
+    --color-footer-text: rgb(255 255 255 / 1);
+    --color-footer-links: rgb(255 255 255 / 1);
 
     /* BASE TYPOGRAPHY */
     --font-body: system-ui, Helvetica, Arial, sans-serif;
