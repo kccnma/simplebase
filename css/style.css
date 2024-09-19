@@ -303,6 +303,10 @@ section {
     color: var(--color-footer-links);
 }
 
+.site-footer .row {
+    align-items: end;
+}
+
 /* ----------------------------- */
 /* ----- ANIMATION -------- */
 /* ----------------------------- */
