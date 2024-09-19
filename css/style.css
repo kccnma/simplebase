@@ -344,7 +344,7 @@ strike {
 .headline {
     font-size: 4em;
     font-weight: 700;
-    color: var(--color-accent-color);
+    /* color: var(--color-accent-color); */
     margin: 1rem 0;
     line-height: 1;
 }
