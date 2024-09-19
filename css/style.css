@@ -270,6 +270,10 @@ section {
     color: var(--color-hero-text);
     padding-top: calc(var(--unit-lg) + 3em);
 
+    h1 {
+        font-size: 4em;
+        text-wrap: balance;
+    }
     h1, h2, h3 {
         color: var(--color-hero-headings);
     }
@@ -312,6 +316,20 @@ html {
 /* ----------------------------- */
 /* ----- CUSTOM STYLING -------- */
 /* ----------------------------- */
+
+strike {
+    text-decoration-color: var(--color-accent-color);
+}
+
+/* EYEBROWS/LEAD-INS/RUNNING-HEADS */
+.eyebrow {
+    text-transform: uppercase;
+    font-size: .8em;
+    letter-spacing: .05em;
+    font-weight: 700;
+    color: var(--color-accent-color);
+    margin: 0;
+}
 
 /* CUSTOM TYPE BLOCK: HEADLINE AND SUB HEADLINE */
 .headline {
