@@ -389,7 +389,7 @@ strike {
 
     aside nav {
         position: sticky;
-        top: var(--unit-md);
+        top: calc(var(--unit-md) + var(--unit-sm));
     }
 
     aside li {
@@ -409,7 +409,7 @@ strike {
     }
 
     section {
-        padding-top: var(--unit-lg);
+        padding-top: var(--unit-md);
         padding-bottom: var(--unit-md);
     }
 
