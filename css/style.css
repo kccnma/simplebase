@@ -239,6 +239,7 @@ img {
 .site-header h1 {
     margin: 0;
     font-size: 1.5em;
+    text-wrap: nowrap;
 }
 .site-header a {
     color: var(--color-header-links);
@@ -364,6 +365,7 @@ strike {
 
     .hero {
         text-align: center;
+        padding-top: var(--unit-lg);
         h1 {
             font-size: 3em;
         }
