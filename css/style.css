@@ -7,6 +7,7 @@ CSS TABLE OF CONTENTS
     # GLOBAL COLORS
     # GLOBAL TYPOGRAPHY
     # GLOBAL MEDIA (eg Images)
+    # GLOBAL HELPERS
 
 # LAYOUT
     # MEDIA QUERIES (w/ RESPONSIVE TYPOGRAPHY)
@@ -17,6 +18,7 @@ CSS TABLE OF CONTENTS
     # HEADER
         # SITE LOGO
         # SITE NAV
+            # TOGGLE-NAV
     # MAIN
         # SECTIONS
     # FOOTER
@@ -109,6 +111,13 @@ p {
     max-width: 60ch;
     margin: .5em 0;
     text-wrap: pretty;
+}
+
+/* GLOBAL HELPERS */
+.hide-visually {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
 }
 
 /* ----------------------------- */
@@ -245,15 +254,115 @@ img {
     color: var(--color-header-links);
     text-decoration: none;
 }
-.site-header .site-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
+
+/* SITE-HEADER SITE NAV */
+.site-header {
+    .site-nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+    }
+    .site-nav a {
+        display: block;
+        padding: var(--unit-sm);
+    }
 }
-.site-header .site-nav a {
-    display: block;
-    padding: var(--unit-sm);
+
+/* SIMPLE TOGGLE NAV WITH DETAILS SUMMARY */
+.site-header {
+
+    .simple-togglenav {
+        --simple-togglenav-bg-color: #555;
+        --simple-togglenav-text-color: #fff;
+        --simple-togglenav-top-position: calc(var(--unit-sm) * 1.5);
+        --simple-togglenav-bottom-position: var(--unit-sm);
+    }
+
+    .simple-togglenav details {
+        position: absolute;
+        top: var(--simple-togglenav-top-position);
+        right: var(--simple-togglenav-bottom-position);
+    }
+
+    .simple-togglenav details[open] {
+        position: fixed;
+        z-index: 200;
+    }
+
+    .simple-togglenav .simple-menu-button {
+        text-align: right;
+        position: relative;
+        z-index: 220;
+        cursor: pointer;
+    }
+
+    /* HIDE THE DEFAULT MARKER */
+    .simple-togglenav .simple-menu-button::marker {
+        content: none;
+    }
+
+    /* HIDE THE MENU BUTTON TEXT */
+    .simple-togglenav .simple-menu-button button {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    /* STYLE THE TOGGLE NAV WHEN OPEN */
+    .simple-togglenav [open] ul {
+        position: fixed;
+        background-color: var(--simple-togglenav-bg-color);
+        top: 0;
+        right: 0;
+        width: 100%;
+        z-index: 100;
+        margin: 0;
+        padding: 2em;
+        min-height: 100vh;
+        display: grid;
+        place-content: center;
+        animation: simple-togglenav-animate-in .6s cubic-bezier(0,1,0,1) forwards;
+        transform: translatey(-100vh);
+    }
+
+    .simple-togglenav a {
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        color: var(--simple-togglenav-text-color);
+    }
+
+
+    /* NAVICON */
+    .simple-togglenav .simple-navicon > * {
+        transform-origin: center;
+        transition: all .1s linear;
+        fill: white;
+    }
+
+    /* NAVICON WHEN MENU IS OPEN */
+    .simple-togglenav [open] .simple-navicon .simple-navicon-top {
+        transform: translate(-30%, 30%) rotate(45deg);
+        width: 100%;
+    }
+
+    .simple-togglenav [open] .simple-navicon .simple-navicon-middle {
+        opacity: 0;
+    }
+    .simple-togglenav [open] .simple-navicon .simple-navicon-bottom {
+        transform: translate(-30%, -30%) rotate(-45deg);
+        width: 100%;
+    }
+
 }
+
+@keyframes simple-togglenav-animate-in {
+    to {
+        transform: translatey(0);
+    }
+}  
+
+
+
 
 /* SITE MAIN */
 .site-main {

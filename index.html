@@ -20,12 +20,26 @@
             </a>
             <h1><a href="index.html">Simple Base</a></h1>
         </div>
-        <nav class="site-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="docs.html">Docs</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
+        <nav class="site-nav simple-togglenav">
+            <details>
+                <!-- NMA TOGGLE NAV MENU BUTTON -->
+                <summary class="simple-menu-button">
+                    <svg class="simple-navicon" width="24" height="21">
+                        <rect class="simple-navicon-top" x="0" y="0" height="3" width="30"></rect>
+                        <rect class="simple-navicon-middle" x="0" y="9" height="3" width="30"></rect>
+                        <rect class="simple-navicon-bottom" x="0" y="18" height="3" width="30"></rect>
+                    </svg>
+                    <button>Menu</button>
+                </summary>
+
+                <!-- NMA TOGGLE NAV CONTENTS -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="docs.html">Get Started</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+
+            </details>
         </nav>
     </header>
 
