@@ -300,6 +300,9 @@ img {
     .simple-togglenav .simple-menu-button::marker {
         content: none;
     }
+    .simple-togglenav .simple-menu-button::-webkit-details-marker {
+        display: none;
+      }
 
     /* HIDE THE MENU BUTTON TEXT */
     .simple-togglenav .simple-menu-button button {
