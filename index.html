@@ -11,35 +11,30 @@
 
 <body>
 
-    <header class="site-header">
+    <header class="site-header on-top-of-hero">
         <div class="site-logo">
             <a href="index.html">
-                <svg width="40" height="40">
-                    <circle cx="20" cy="20" r="20" fill="#aaaaaa" />
+                <!-- <img src="img/placeholder-logo-500x500.svg" alt="Site Base Logo" width="50" height="50"> -->
+                <svg width="50" height="50">
+                    <circle r="25" cx="25" cy="25" fill="#5ac2ff"></circle>
                 </svg>
             </a>
             <h1><a href="index.html">Simple Base</a></h1>
         </div>
-        <nav class="site-nav simple-togglenav">
-            <details>
-                <!-- NMA TOGGLE NAV MENU BUTTON -->
-                <summary class="simple-menu-button">
-                    <svg class="simple-navicon" width="24" height="21">
-                        <rect class="simple-navicon-top" x="0" y="0" height="3" width="30"></rect>
-                        <rect class="simple-navicon-middle" x="0" y="9" height="3" width="30"></rect>
-                        <rect class="simple-navicon-bottom" x="0" y="18" height="3" width="30"></rect>
-                    </svg>
-                    <button>Menu</button>
-                </summary>
-
-                <!-- NMA TOGGLE NAV CONTENTS -->
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="docs.html">Get Started</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-
-            </details>
+        <nav class="site-header-nav toggle-menu" data-menustate="closed">
+            <button class="site-menu-button">
+                <span class="hide-visually">Menu</span>
+                <svg class="simple-navicon" width="24" height="21">
+                    <rect class="simple-navicon-top" x="0" y="2" height="3" width="30"></rect>
+                    <rect class="simple-navicon-middle" x="0" y="9" height="3" width="30"></rect>
+                    <rect class="simple-navicon-bottom" x="0" y="16" height="3" width="30"></rect>
+                </svg>
+            </button>
+            <ul class="site-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="docs.html">Docs</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -54,7 +49,7 @@
                     </div>
                     <div class="one-half">
                         <p class="eyebrow">A Simple Front-end Boilerplate</p>
-                        <h1>Start From <strike>Scratch</strike> a <em>Simple Base</em></h1>
+                        <h1>Start From <strike>Scratch</strike> a <span class="accent">Simple Base</span></h1>
                         <p>Simple Base is a basic set of starter HTML, CSS, and Javascript created specifically for building hand-coded 100% custom-designed bespoke static websites that are fast and accessible. It's simple, fully customizable, not too opinionated, and supports convenient features such as CSS custom properties (variables) and CSS nesting.</p>
                     </div>
                 </div>
@@ -73,7 +68,7 @@
                     </div>
                     <div class="one-third">
                         <img src="img/placeholder-800x800.gif" alt="Thumb Image" width="800" height="800">
-                        <h2>Minimally Opinionated</h2>
+                        <h2>Less Opinionated</h2>
                         <p>Simple Base gives you <em>just enough</em> styling out-of-the-box to look good, yet be 100% fully customizable. To layout content, you'll need a grid. We give you one, along with a bunch of other helpful goodies.</p>
                     </div>
                     <div class="one-third">
@@ -97,7 +92,7 @@
 
                     <div class="one-half">
                         <p class="eyebrow">Keep it Simple</p>
-                        <h2>Only the Bare Essentials</h2>
+                        <h2>Only the <span class="accent">Bare</span> Essentials</h2>
                         <p>Simple Base aims to provide only the core ingredients that you need to build bespoke static websites, such as minimal base-level/global CSS styling (only a few common resets, a short set of helpful variables, minimalist typography settings, etc) and essential layout tools to build responsive websites (a container, a semantic 12 column grid system, a responsive off-screen menu)</p>
                     </div>
 
@@ -117,7 +112,7 @@
 
                     <div class="one-half">
                         <p class="eyebrow">A Solid Foundation</p>
-                        <h2>A Core Set of Building Blocks</h2>
+                        <h2>A Core Set of <span class="accent">Building Blocks</span></h2>
                         <p>Simple Base provides a solid base-level of code upon which front-end web developers and UI designers can build bespoke static websites, such as structural site components (e.g. site header, site footer, site nav, hero sections) and content components (buttons, type blocks, icons, icon lists, cards, block quotes, pricing tables, image galleries, carousels, etc.)
                         </p>
                     </div>
@@ -133,11 +128,9 @@
                 <div class="row">
                     <div class="one-half centered">
                         <img src="img/placeholder-800x800.gif" alt="Placeholder">
-                    </div>
-                    <div class="one-half centered">
-                        <p class="eyebrow">Performance First</p>
-                        <h2>Lighting Fast</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam maxime reiciendis sequi, labore cum sed animi facere quaerat minima quo sit quas unde? Reprehenderit dolor voluptas laboriosam voluptatibus deserunt! Quod!</p>
+                        <p class="eyebrow add-space-on-top-medium">Performance First</p>
+                        <h2><span class="accent">Lighting</span> Fast</h2>
+                        <p><a href="#">This is a link</a>. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam maxime reiciendis sequi, labore cum sed animi facere quaerat minima quo sit quas unde? Reprehenderit dolor voluptas laboriosam voluptatibus deserunt! Quod!</p>
                     </div>
                 </div>
 
@@ -153,7 +146,7 @@
 
                 <div class="two-thirds">
                     <svg width="80" height="80">
-                        <circle cx="40" cy="40" r="40" fill="#aaaaaa" />
+                        <circle cx="40" cy="40" r="40" fill="#5ac2ff" />
                     </svg>
                     <h2>Simple Base</h2>
                     <p>A simple set of starter HTML, CSS, & JS that is 100% customizable as a base-level front-end framework to create hand-crafted, custom static websites that are fast, flexible, and perfectly suited for 100% bespoke unique UI designs.</p>
@@ -162,7 +155,7 @@
                 <div class="one-third">
 
                     <h2>Pages</h2>
-                    <nav class="site-nav">
+                    <nav class="site-footer-nav">
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="docs.html">Docs</a></li>
@@ -175,6 +168,9 @@
 
         </div>
     </footer>
+
+    <!-- MAIN JS FILE -->
+    <script src="js/script.js"></script>
 
 </body>
 
