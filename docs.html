@@ -57,6 +57,8 @@
                         <li>Get Started
                             <ul>
                                 <li><a href="#intro">Introduction</a></li>
+                                <li><a href="#folderstructure">Folder Structure</a></li>
+                                <li><a href="#boilerplate">Boilerplate</a></li>
                             </ul>
                         </li>
                         <li>Core Features
@@ -83,7 +85,102 @@
 
                 <section id="intro">
                     <h2 class="section-head">Introduction</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque rerum corrupti explicabo dolorum sint quo natus ab at autem aliquid alias aliquam dolores quasi accusantium, dolore officiis mollitia saepe, voluptatem incidunt. Dolore alias delectus dicta, ex error corrupti quia consectetur rem ea possimus neque quibusdam porro saepe tempora recusandae eligendi!</p>
+                    <p>Simple Base is a minimalistic HTML + CSS + JS base front-end starter boilerplate for simple static web site projects. Designed for web designers and front-end developers, Simple Base was created for students learning how to code a basic front-end framework from scratch by hand, line by line.</p>
+                    <p>No prior web design experience is required. Designed for first-time front-end coders, Simple Base uses no pre-processing, no command line, and no special software. All you need is a text editor and a browser.</p>
+                    <p>All styling is intentionally minimal for simple, basic web sites. Core CSS includes base typography, a simple responsive grid, and a default site structure with a mobile-friendly navigation system.</p>
+
+                    <hr>
+
+                    <h3 id="folderstructure">Folder Structure</h3>
+
+                    <pre><code>
+sitename/
+├── index.html
+├── css/
+│   ├── style.css
+├── js/
+│   ├── script.js
+├── img/
+│   ├── ...                 
+                    </code></pre>
+
+                    <hr>
+
+                    <h3 id="boilerplate">Boilerplate</h3>
+
+                    <h4>HTML</h4>
+                    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+
+    &lt;title&gt;&lt;/title&gt;                  
+    &lt;meta name="description" content=""&gt;   
+
+    &lt;!-- MAIN CSS --&gt;
+    &lt;link rel="stylesheet" href="css/style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    
+    ...
+
+    &lt;!-- MAIN JS --&gt;
+    &lt;script src="js/script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                    </code></pre>
+
+                    <h4>CSS</h4>
+                    <pre><code>
+/* CSS TABLE OF CONTENTS 
+
+# GLOBAL
+    # GLOBAL VARIABLES (CUSTOM PROPERTIES)
+    # GLOBAL RESETS
+    # GLOBAL COLORS
+    # GLOBAL TYPOGRAPHY
+    # GLOBAL MEDIA 
+    # GLOBAL HELPERS
+
+# LAYOUT
+    # CONTAINER
+    # GRID SYSTEM
+
+# PAGE STRUCTURE (BASE TEMPLATE)
+    # HEADER
+    # MAIN
+        # SECTIONS
+    # FOOTER
+
+# UI COMPONENTS
+    # BUTTONS
+    ...
+
+# ANIMATION
+    # SMOOTH SCROLLING
+
+# CUSTOM STYLING
+    ...
+
+*/
+                    </code></pre>
+
+                    <h4>JavaScript</h4>
+                    <pre><code>
+document.addEventListener("DOMContentLoaded", function () {
+
+    // GLOBAL FUNCTIONS 
+    ...
+
+});
+                    </code></pre>                    
+
+                </section>
+
+                <section>
+                    
                 </section>
 
                 <section id="typography">

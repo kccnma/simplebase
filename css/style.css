@@ -1,5 +1,4 @@
-/* 
-CSS TABLE OF CONTENTS 
+/* CSS TABLE OF CONTENTS 
 
 # GLOBAL
     # GLOBAL VARIABLES (CUSTOM PROPERTIES)
@@ -25,6 +24,8 @@ CSS TABLE OF CONTENTS
 
 # UI COMPONENTS
     # BUTTONS
+    # HR
+    # CODE BLOCKS
 
 # ANIMATION
     # SMOOTH SCROLLING
@@ -40,6 +41,12 @@ CSS TABLE OF CONTENTS
 
 /* SET GLOBAL VARIABLES */
 :root {
+
+    /* PRIMITIVE COLORS */
+    --color-white: #fff;
+    --color-grey-200: rgb(0 0 0 / .2);
+    --color-black-800: rgb(0 0 0 / .8);
+    --color-black: #000;
 
     /* BASE COLORS */
     --color-body-background: rgb(255, 255, 255);
@@ -72,6 +79,12 @@ CSS TABLE OF CONTENTS
     --unit-small: 1em;
     --unit-medium: 2em;
     --unit-large: 4em;
+    --unit-extralarge: 6em;
+
+    /* BORDERS */
+    --color-border: var(--color-grey-200);
+    --border-radius: 5px;
+    --border-thickness: .5px;
 
 
 }
@@ -190,6 +203,11 @@ img {
         top: -9999px;
         left: -9999px;
     }
+}
+
+/* OFFSET THE ANCHOR TARGET FOR INLINE ANCHOR LINKS */
+:target {
+    scroll-margin-top: var(--unit-medium);
 }
 
 /* ----------------------------- */
@@ -666,6 +684,22 @@ section {
 
     }
 
+}
+
+/* HR */
+hr {
+    border: none;
+    border-bottom: var(--border-thickness) solid var(--color-border);
+    margin: var(--unit-large) 0;
+}
+
+/* Code Blocks */
+pre:has(code) {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding-inline: var(--unit-medium);
+    border-radius: var(--border-radius);
+    white-space: pre-wrap;
 }
 
 
